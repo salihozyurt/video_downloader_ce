@@ -1,0 +1,11 @@
+{
+	"manifest_version": 2,
+	"name": "JQQ YouTube Links",
+	"description": "Shows recent YT video links from JQQ"
+	"version":"1.0",
+	"browser_action":{
+		"default_icon": "icon.png",
+		"default_pop": "popup.html"
+	},
+	"permissions": []
+}
