@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    width: 96vw;
+}
+
+#intro{
+    display: inline-flex;
+}
+
+#catch-video {
+    margin-left: 20px;
+}
+
+#video-div {
+    display: none;
+}
+
+#download-button {
+    margin-left: 20px;
+}
