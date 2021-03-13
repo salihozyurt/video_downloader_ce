@@ -3,6 +3,11 @@
 	"name": "UES Video Downloader",
 	"description": "You can watch video in new tab or download Network Stream mod or direct video.",
 	"version":"1.0",
+	"icons": {
+		"16": "icon.png",
+		"48": "icon.png",
+		"128": "icon.png"
+	},
 	"content_scripts": [
 		{
 			"matches": ["*://ues.marmara.edu.tr/*"],
