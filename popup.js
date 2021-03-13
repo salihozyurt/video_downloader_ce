@@ -9,31 +9,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     let videoUrl = null
+    let videoTitle = null
 
     document.getElementById('new_tab').addEventListener('click', function () {
-        const dwjs = new
-        console.log(videoUrl)
-        //window.location.assign(videoUrl)
-        //download(videoUrl,"elek","video/mp4")
+        chrome.downloads.download({
+            url: videoUrl,
+            filename: videoTitle
+        })
     }, false)
 
     function getUrl(res) {
         videoUrl = res.url
-        /*const div = document.createElement('div')
-        try {
-            //div.textContent = `${res.url}`
-            div.innerHTML = `<button id="new_tab()">New Tab</button>`
-        } catch (error) {
-            div.textContent = 'Video cannot found!!!'
-        }
-        const script = document.createElement('script')
-        script.innerHTML = `<script>
-                                function new_tab() {
-                                    window.location.assign('${res.url}')
-                                }
-                            </script>`
-        document.body.appendChild(div)
-        document.body.appendChild(script)*/
+        videoTitle = res.title
+        console.log(videoUrl)
     }
 }, false)
 
