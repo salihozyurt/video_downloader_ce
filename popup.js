@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             chrome.downloads.download({
                 url: videoUrl,
-                filename: videoTitle
+                filename: videoTitle + '.mp4'
             })
         } catch (error) {
             console.log(error)
